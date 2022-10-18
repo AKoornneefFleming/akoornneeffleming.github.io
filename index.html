@@ -1,44 +1,67 @@
 <!DOCTYPE html>
-<html>
+<!--/*Adrian Koornneef*/ -->
+<!--/*October 2022*/ -->
+<!--/*GEOM 102*/ -->
+<!--/*w3schools was used as a starting point for all basic functionality of the website. Additional*/ -->
+<!--/*sourcing and credit is provided for more compplicated functionality such as navbars, link styling etc.*/ -->
+<!--Additional source and methadology details provided in CSS Sheet  -->
+<html lang="en">  <!-- Validator program  -->
 <head>
-<style>
-p.dotted {border-style: dotted;}
-p.dashed {border-style: dashed;}
-p.solid {border-style: solid;}
-p.double {border-style: double;}
-p.groove {border-style: groove;}
-p.ridge {border-style: ridge;}
-p.inset {border-style: inset;}
-p.outset {border-style: outset;}
-p.none {border-style: none;}
-p.hidden {border-style: hidden;}
-p.mix {border-style: dotted dashed solid double;}
-</style>
+<title>AKIndex</title>
+<meta charset="utf-8"> <!-- w3schools. Included because it was shown when demoing how to create a dynamic layout option -->
+<meta name="viewport" content="width=device-width, initial-scale=1">  <!-- w3schools. Same comment as above.  -->
+<link href="AKStyleSheet.css" rel="stylesheet">  <!-- External Stylesheet  -->
 </head>
 <body>
-  
-<h1 style="background-color:DodgerBlue;">Hello World</h1>
-<p style="background-color:Tomato;">
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-</p>
-  
-<h2>The border-style Property</h2>
-<p>This property specifies what kind of border to display:</p>
-
-<p class="dotted">A dotted border. <a href="/resume/cv.html">This is a test for my link to the other page</a></p>
-<p class="dashed">A dashed border.</p>
-<p class="solid">A solid border.</p>
-<p class="double">A double border.</p>
-<p class="groove">A groove border.</p>
-<p class="ridge">A ridge border.</p>
-<p class="inset">An inset border.</p>
-<p class="outset">An outset border.</p>
-<p class="none">No border.</p>
-<p class="hidden">A hidden border.</p>
-<p class="mix">A mixed border. Also, a picture<br><img src="AKCity.jpg" alt="Trulli" width="768" height="960"></p>
-  
-<p></p>
-
+<!-- NavBar Section-->
+<!-- /***********************NavBar**********************//-->
+<!-- https://www.w3schools.com/howto/howto_js_tabs.asp *//-->
+<!--Functionality inspired by w3schools, formatting changes applied*/-->
+<div class="navbar">  <!--Seperate container for navbar -->
+	<a class="active" href="index.html">Home</a> <!--Define which link is the active for additional styling -->
+	<a href="./trips/AKTripReports.html">Trip Reports</a>
+	<a href="index.html">Maps and Projects(Coming Soon)</a> <!--Coming soon, pages redirect to index if user clicks on them -->
+	<a href="index.html">CV (ComingSoon)</a> <!--Coming soon, pages redirect to index if user clicks on them -->
+</div>
+<!--/ https://www.w3schools.com/html/tryit.asp?filename=tryhtml_layout_float-->
+<header class="A"> <!--See CSS Layout details*/-->
+	<h1>Adrian Koornneef</h1>
+</header>
+<section>
+	<article class = "Left"> <!--See CSS Layout details. W3schools inspired. Modified from a nav to a seperate article class*/-->
+		<h2><u>MDEM, GIS Student, Adventurer at large</u></h2>  <!--Additional underline parmater provided to h2*/-->
+		<div class = "IndexA"> <!--References CSS class created for this page. Similar to other page, left for sementic / organization / flexibility for changes*/-->
+			<h3>Welcome to my webpage</h3> 
+			<p>This site is intended to me learn my web development skills, and to act as a databse for the things I am learning, building, or just 
+			generally find interesting.If you would like to know more about my professional skills and eclectic work experiences, please check out my CV section. 
+			If you find yourself driven by adventure, be sure to check out my backcountry travel reports (coming soon). If you are also interested in learning new things, 
+			please stay tuned as I continue to learn my web-development skills and update this webpage.</p>
+			<p><i>In the mean time, feel free to grab yourself a copy and challenge me to a game of chess!</i></p>  <!--Additional italics parmater provided to h2*/-->
+			<ul> <!--Unorganized lists used as a styling method for external links in addition to CSS class specific for external links. See CSS sheet for additional detail/-->
+				<li><a class="ext" href="https://www.chess.com/member/pragmaticnonsense">Lets play some chess!</a></li> <!--External link, references link class-->
+			</ul>
+		</div>
+	</article>
+	<article class = "Right">  <!--See CSS Layout details. W3schools inspired. Modified to a seperate article class*/ Allows for interaction and formatting split over the page-->
+		<p><img class = "Profile" src="AKCity230x288px.jpg" alt="Man on rooftop downtown Toronto"></p>  <!--image set to native resoltuion. Alternative text. CSS applied formatting in external sheet-->
+	</article>
+</section>
+	<div class="IndexB"> <!--Seperate section for slight alterations defined in CSS sheet-->
+		<h3>About Me</h3>
+		<p id = "pgroove"> <!--Unique ID-->I like to learn new things, to push myself, to seek adventure, and to leave the world in a better place along the way. 
+		<!--Placeholder / filler text-->Text test values text filler text test values text filler Text test values text filler text test values text filler
+		Text test values text filler text test values text filler
+		Text test values text filler text test values text filler
+		Text test values text filler text test values text filler
+		Text test values text filler text test values text filler
+		Text test values text filler text test values text filler
+		Text test values text filler text test values text filler
+		Text test values text filler text test values text filler
+		Text test values text filler text test values text filler
+		Text test values text filler text test values text filler
+		Text test values text filler text test values text filler
+		Text test values text filler text test values text filler
+		</p>
+	</div>
 </body>
 </html>
